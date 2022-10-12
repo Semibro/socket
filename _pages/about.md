@@ -12,8 +12,6 @@ permalink: /about/
  - Mail : wnsgud6232@naver.com
  
  - github : https://github.com/Semibro
- 
- - A.B : https://blog.naver.com/wnsgud6232
 
 ## 경력
 
