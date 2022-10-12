@@ -5,15 +5,15 @@ permalink: /about/
 ---
 ## About Me!
 
+ - 데이터 분석과 인공지능 개발에 관심이 있습니다.
 
 ## Contact
  
  - Mail : wnsgud6232@naver.com
  
- - github : github.com/Semibro
+ - github : https://github.com/Semibro
  
  - A.B : https://blog.naver.com/wnsgud6232
-
 
 ## 경력
 
