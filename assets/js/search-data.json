@@ -1,22 +1,11 @@
 {
   
-    
-        "post0": {
-            "title": "An Example Markdown Post",
-            "content": "Example Markdown Post . Basic setup . Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-filename.md . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and filename is whatever file name you choose, to remind yourself what this post is about. .md is the file extension for markdown files. . The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “level 1 heading” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line ## File names above. . Basic formatting . You can use italics, bold, code font text, and create links. Here’s a footnote 1. Here’s a horizontal rule: . . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() . Python code and output: . # Prints &#39;2&#39; print(1+1) . 2 . Formatting text as shell commands: . echo &quot;hello world&quot; ./some_script.sh --option &quot;value&quot; wget https://example.com/cat_photo1.png . Formatting text as YAML: . key: value - another_key: &quot;another value&quot; . Tables . Column 1 Column 2 . A thing | Another thing | . Tweetcards . Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 Footnotes . This is the footnote. &#8617; . |",
-            "url": "https://semibro.github.io/socket/markdown/2020/01/14/test-markdown-post.html",
-            "relUrl": "/markdown/2020/01/14/test-markdown-post.html",
-            "date": " • Jan 14, 2020"
-        }
-        
-    
-  
 
   
   
 
   
-      ,"page1": {
+      "page1": {
           "title": "About Me",
           "content": "About Me! . 데이터 분석과 인공지능 개발에 관심이 있습니다. | . Contact . Mail | wnsgud6232@naver.com | . | github | https://github.com/Semibro | . | . 경력 . 전북대학교 바이오메디컬공학부(헬스케어정보전공) (2017-03-01 ~ 2023-02-28) . | 전북대학교 IAB융합전공(IoT, AI, Big Data) (2021-03-01 ~ 2023-02-28) . | 전북대학교 의광학연구실(Vision AI) (2022-06-01 ~ ) . | . 수상 . 전북대학교 캡스톤디자인 경진대회 은상(전기/전자/IT) (2022-06-27) | . 프로젝트 . 한이음ICT멘토링 (2022-04-12 ~ 2022-11-30) | . 자격증 . 자동차운전면허 1종보통 (2017-01-25) . | 한국사능력검정시험 2급 (2019-11-08) . | 컴퓨터활용능력 1급 (2021-07-16) . | 정보처리기사 (2022-09-02) . | . 논문 . IoT센서를 활용한 환경을 생각하는 푸드쉐어링 시스템 구현 및 고찰(Sharing food system implementation that considers the environment using IoT sensors) | . 프로그래밍 언어 . Python . | R . | . 관심분야 . 인공지능 (머신러닝, 딥러닝) . | 빅데이터 . | 데이터 분석 . | .",
           "url": "https://semibro.github.io/socket/about/",
