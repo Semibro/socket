@@ -1,22 +1,11 @@
 {
   
-    
-        "post0": {
-            "title": "IAB딥러닝 9월 8일",
-            "content": "Import . from fastai.vision.all import * . &#48373;&#49845; . (1) &#45936;&#51060;&#53552; &#51221;&#47532; . path = untar_data(URLs.PETS) / &#39;images&#39; . fnames = get_image_files(path) . def label_func(fname): if fname[0].isupper(): return &#39;cat&#39; else: return &#39;dog&#39; . dls = ImageDataLoaders.from_name_func(path, fnames, label_func, item_tfms = Resize(224)) . Due to IPython and Windows limitation, python multiprocessing isn&#39;t available now. So `number_workers` is changed to 0 to avoid getting stuck . (2) lrnr &#50724;&#48652;&#51229;&#53944; &#49373;&#49457; . lrnr = vision_learner(dls, resnet34, metrics = error_rate) . (3) lrnr &#54617;&#49845; . lrnr.fine_tune(1) . epoch train_loss valid_loss error_rate time . 0 | 0.150615 | 0.036099 | 0.011502 | 00:35 | . epoch train_loss valid_loss error_rate time . 0 | 0.063639 | 0.034654 | 0.009472 | 00:38 | . (4) lrnr &#50696;&#52769; . lrnr.predict(path.ls()[0]) # 방법1 # lrnr.predict(&#39;2022-09-06-hani03.jpg&#39;) 방법2 # X, y = dls.one_batch() # lrnr.model(X[0 : 1]) 방법3 . (&#39;cat&#39;, TensorBase(0), TensorBase([1.0000e+00, 9.7220e-09])) . &#54532;&#47196;&#44536;&#47000;&#48141; &#44284;&#51221; overview . dls &#50724;&#48652;&#51229;&#53944; &#49373;&#49457; --&gt; lrnr &#50724;&#48652;&#51229;&#53944; &#49373;&#49457; --&gt; lrnr &#54617;&#49845; --&gt; lrnr &#50696;&#52769; . &#48708;&#44368; . 회귀분석(R) 이미지분석(CNN) 추천시스템 . 1단계 | data.frame() | ImageDataLoaders.from_name_func() | CollabDataLoaders.from_df() | . 2단계 | None | cnn_learner() | collab_learner() | . 3단계 | lm(y~x1+x2,df) | lrnr.fine_tune(1) | lrnr.fit() | . 4단계 | predict(ob,newdf) | lrnr.predict(), lrnr.model(X) | lrnr.model(X) | . ImageDataLoaders.from_name_func? # 함수의 경로 확인 가능 . cnn_learner? . vision_learner? . lrnr.fine_tune? . lrnr.predict? .",
-            "url": "https://semibro.github.io/socket/2022/09/08/IABDL.html",
-            "relUrl": "/2022/09/08/IABDL.html",
-            "date": " • Sep 8, 2022"
-        }
-        
-    
-  
 
   
   
 
   
-      ,"page1": {
+      "page1": {
           "title": "About Me",
           "content": "About Me! . 데이터 분석과 인공지능 개발에 관심이 있습니다. | . Contact . Mail | wnsgud6232@naver.com | . | github | https://github.com/Semibro | . | . 경력 . 전북대학교 바이오메디컬공학부(헬스케어정보전공) (2017-03-01 ~ 2023-02-28) . | 전북대학교 IAB융합전공(IoT, AI, Big Data) (2021-03-01 ~ 2023-02-28) . | 전북대학교 의광학연구실(Vision AI) (2022-06-01 ~ ) . | . 수상 . 전북대학교 캡스톤디자인 경진대회 은상(전기/전자/IT) (2022-06-27) | . 프로젝트 . 한이음ICT멘토링 (2022-04-12 ~ 2022-11-30) | . 자격증 . 자동차운전면허 1종보통 (2017-01-25) . | 한국사능력검정시험 2급 (2019-11-08) . | 컴퓨터활용능력 1급 (2021-07-16) . | 정보처리기사 (2022-09-02) . | . 논문 . IoT센서를 활용한 환경을 생각하는 푸드쉐어링 시스템 구현 및 고찰(Sharing food system implementation that considers the environment using IoT sensors) | . 프로그래밍 언어 . Python . | R . | . 관심분야 . 인공지능 (머신러닝, 딥러닝) . | 빅데이터 . | 데이터 분석 . | .",
           "url": "https://semibro.github.io/socket/about/",
