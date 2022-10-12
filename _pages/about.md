@@ -3,6 +3,18 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+## About Me!
+
+
+## Contact
+ 
+ - Mail : wnsgud6232@naver.com
+ 
+ - github : github.com/Semibro
+ 
+ - A.B : https://blog.naver.com/wnsgud6232
+
+
 ## 경력
 
  - 대전대성고등학교
