@@ -9,9 +9,9 @@ permalink: /about/
 
 ## Contact
  
- - Mail : wnsgud6232@naver.com
+ - Mail | wnsgud6232@naver.com
  
- - github : https://github.com/Semibro
+ - github | https://github.com/Semibro
 
 ## 경력
 
