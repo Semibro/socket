@@ -1,11 +1,22 @@
 {
   
+    
+        "post0": {
+            "title": "Import",
+            "content": "from fastai.vision.all import * . path = untar_data(URLs.PETS) / &#39;images&#39; . path . Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images&#39;) . PILImage.create(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_1.jpg&#39;) . files = get_image_files(path) files . (#7390) [Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_1.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_10.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_100.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_101.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_102.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_103.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_104.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_105.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_106.jpg&#39;),Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_107.jpg&#39;)...] . files[0] . Path(&#39;C:/Users/USER/.fastai/data/oxford-iiit-pet/images/Abyssinian_1.jpg&#39;) . PILImage.create(files[0]) . print(files[2]) PILImage.create(files[2]) . C: Users USER .fastai data oxford-iiit-pet images Abyssinian_100.jpg . print(files[3]) PILImage.create(files[3]) . C: Users USER .fastai data oxford-iiit-pet images Abyssinian_101.jpg . print(files[4]) PILImage.create(files[4]) . C: Users USER .fastai data oxford-iiit-pet images Abyssinian_102.jpg . print(files[5]) PILImage.create(files[5]) . C: Users USER .fastai data oxford-iiit-pet images Abyssinian_103.jpg . print(files[6]) PILImage.create(files[6]) . C: Users USER .fastai data oxford-iiit-pet images Abyssinian_104.jpg . print(files[7]) PILImage.create(files[7]) . C: Users USER .fastai data oxford-iiit-pet images Abyssinian_105.jpg . print(files[8]) PILImage.create(files[8]) . C: Users USER .fastai data oxford-iiit-pet images Abyssinian_106.jpg . def label_func(fname): if fname[0].isupper(): return &#39;cat&#39; else: return &#39;dog&#39; . dls = ImageDataLoaders.from_name_func(path, files, label_func, item_tfms = Resize(224)) . Due to IPython and Windows limitation, python multiprocessing isn&#39;t available now. So `number_workers` is changed to 0 to avoid getting stuck . dls.show_batch(max_n=16) . clsfr = cnn_learner(dls, resnet34, metrics = error_rate) . clsfr.fine_tune(1) . epoch train_loss valid_loss error_rate time . 0 | 0.150200 | 0.021279 | 0.006766 | 00:35 | . epoch train_loss valid_loss error_rate time . 0 | 0.059970 | 0.032037 | 0.010149 | 00:39 | .",
+            "url": "https://semibro.github.io/socket/2022/09/06/IABDL.html",
+            "relUrl": "/2022/09/06/IABDL.html",
+            "date": " • Sep 6, 2022"
+        }
+        
+    
+  
 
   
   
 
   
-      "page1": {
+      ,"page1": {
           "title": "About Me",
           "content": "About Me! . 데이터 분석과 인공지능 개발에 관심이 있습니다. | . Contact . Mail | wnsgud6232@naver.com | . | github | https://github.com/Semibro | . | . 경력 . 전북대학교 바이오메디컬공학부(헬스케어정보전공) (2017-03-01 ~ 2023-02-28) . | 전북대학교 IAB융합전공(IoT, AI, Big Data) (2021-03-01 ~ 2023-02-28) . | 전북대학교 의광학연구실(Vision AI) (2022-06-01 ~ ) . | . 수상 . 전북대학교 캡스톤디자인 경진대회 은상(전기/전자/IT) (2022-06-27) | . 프로젝트 . 한이음ICT멘토링 (2022-04-12 ~ 2022-11-30) | . 자격증 . 자동차운전면허 1종보통 (2017-01-25) . | 한국사능력검정시험 2급 (2019-11-08) . | 컴퓨터활용능력 1급 (2021-07-16) . | 정보처리기사 (2022-09-02) . | . 논문 . IoT센서를 활용한 환경을 생각하는 푸드쉐어링 시스템 구현 및 고찰(Sharing food system implementation that considers the environment using IoT sensors) | . 프로그래밍 언어 . Python . | R . | . 관심분야 . 인공지능 (머신러닝, 딥러닝) . | 빅데이터 . | 데이터 분석 . | .",
           "url": "https://semibro.github.io/socket/about/",
