@@ -1,0 +1,2190 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>IAB딥러닝 9월 19일 | Socket</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="IAB딥러닝 9월 19일" />
+<meta name="author" content="김준형" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Overview - Assignment" />
+<meta property="og:description" content="Overview - Assignment" />
+<link rel="canonical" href="https://semibro.github.io/socket/2022/09/19/IABDL.html" />
+<meta property="og:url" content="https://semibro.github.io/socket/2022/09/19/IABDL.html" />
+<meta property="og:site_name" content="Socket" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-19T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IAB딥러닝 9월 19일" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김준형"},"dateModified":"2022-09-19T00:00:00-05:00","datePublished":"2022-09-19T00:00:00-05:00","description":"Overview - Assignment","headline":"IAB딥러닝 9월 19일","mainEntityOfPage":{"@type":"WebPage","@id":"https://semibro.github.io/socket/2022/09/19/IABDL.html"},"url":"https://semibro.github.io/socket/2022/09/19/IABDL.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/socket/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://semibro.github.io/socket/feed.xml" title="Socket" /><link rel="shortcut icon" type="image/x-icon" href="/socket/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/socket/">Socket</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/socket/about/">About Me</a><a class="page-link" href="/socket/search/">Search</a><a class="page-link" href="/socket/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">IAB딥러닝 9월 19일</h1><p class="page-description">Overview - Assignment</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-19T00:00:00-05:00" itemprop="datePublished">
+        Sep 19, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">김준형</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      10 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Semibro/socket/tree/master/_notebooks/2022-09-19-IABDL.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/socket/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Semibro/socket/master?filepath=_notebooks%2F2022-09-19-IABDL.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/socket/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Semibro/socket/blob/master/_notebooks/2022-09-19-IABDL.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/socket/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FSemibro%2Fsocket%2Fblob%2Fmaster%2F_notebooks%2F2022-09-19-IABDL.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/socket/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#1.-이미지자료분석">1. 이미지자료분석 </a></li>
+<li class="toc-entry toc-h1"><a href="#2.-추천시스템">2. 추천시스템 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#(1)-73번-유저가-먹은-아이템-및-평점을-출력하는-코드를-작성.">(1) 73번 유저가 먹은 아이템 및 평점을 출력하는 코드를 작성. </a></li>
+<li class="toc-entry toc-h3"><a href="#(2)-dls와-lrnr-오브젝트를-생성하고-lrnr-오브젝트를-학습.">(2) dls와 lrnr 오브젝트를 생성하고 lrnr 오브젝트를 학습. </a></li>
+<li class="toc-entry toc-h3"><a href="#(3)-데이터프레임-생성">(3) 데이터프레임 생성 </a></li>
+<li class="toc-entry toc-h3"><a href="#(4)-73번-유저의-취향-파악">(4) 73번 유저의 취향 파악 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#3.-시퀀스자료분석">3. 시퀀스자료분석 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#(1)-TextDataLoaders.from_df을-이용하여-dls-오브젝트-생성">(1) TextDataLoaders.from_df을 이용하여 dls 오브젝트 생성 </a></li>
+<li class="toc-entry toc-h3"><a href="#(2)-lrnr-오브젝트-생성-(arch-=-AWD_LSTM,-metrics-=-accuracy)">(2) lrnr 오브젝트 생성 (arch = AWD_LSTM, metrics = accuracy) </a></li>
+<li class="toc-entry toc-h3"><a href="#(3)-lrnr-오브젝트에서-fine_tune(3)-메소드를-이용하여-모형을-학습">(3) lrnr 오브젝트에서 fine_tune(3) 메소드를 이용하여 모형을 학습 </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-09-19-IABDL.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">fastai.vision.all</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">fastai.collab</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">fastai.text.all</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.-이미지자료분석">
+<a class="anchor" href="#1.-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9E%90%EB%A3%8C%EB%B6%84%EC%84%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 이미지자료분석<a class="anchor-link" href="#1.-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9E%90%EB%A3%8C%EB%B6%84%EC%84%9D"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="n">untar_data</span><span class="p">(</span><span class="n">URLs</span><span class="o">.</span><span class="n">MNIST_SAMPLE</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dls</span> <span class="o">=</span> <span class="n">ImageDataLoaders</span><span class="o">.</span><span class="n">from_folder</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">suffle</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Due to IPython and Windows limitation, python multiprocessing isn't available now.
+So `number_workers` is changed to 0 to avoid getting stuck
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dls</span><span class="o">.</span><span class="n">show_batch</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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CgAAFKjjTwLcY489QpY73e8vf/lL9v6DDz44ZG+//XbD8+Q2/OU2Re24447Z+ydOnBiy3ClXtL/ddtstZEOGDKnr3jfffDNkrdrsl1JKn/70p0N2+umn133/tGnTenIc6HW5n9FrrrlmyF555ZW+GKdXeAIAAAVSAACgQAoAABRIAQCAAnX8JsDca09zG61ym+tSam7DX85hhx0WstxmsK42dN15550h64STpojGjh0bshVWWKGue59++umeHqcpuc222223XfbaZ555JmQnn3xyj88EvelXv/pVyJp5BXw78gQAAAqkAABAgRQAACiQAgAABer4TYA33XRTyK6//vqQzZ8/v8e/e+TIkSG7+uqrQ5Z75fI+++yT/cwnn3yy+cFoW1UV38o5Y8aMkF1zzTV9MU7ddtppp5Dl/reklNJWW23V2+NAr8u9Vn7x4sUtmKT3eAIAAAVSAACgQAoAABRIAQCAAnX8JsA5c+b0yfd89rOfDdmll15a172TJ08OWe4EQ/qXY489NmQnnnhiyG6++eaQtdvrc3OvQc1tbk0ppbvuuitkrXyVMWU67bTTmrq/hBNYPQEAgAIpAABQIAUAAAqkAABAgTp+E2BfyW3o+uu//uuQvf/++yH7x3/8x5B98MEHPTMYbWv69OkhO/fcc1swSfNGjx4dsjfeeCN7be5/46JFi3p8JliaAQMGhKyr0ytL5QkAABRIAQCAAikAAFAgBQAACqQAAECB/CmAjL333jtkI0eODFnuKNTce9yfeuqpnhkM+sDxxx9f13V//OMfu5VDb1luufivstyfAujq+OpSeQIAAAVSAACgQAoAABRIAQCAAtkEmHHKKaeEbLvttgtZbnPfGWec0SszQW/YcsstQ3bppZeG7KOPPgrZr3/9694YCbpt/fXXD9lee+1V173PP/98Nn/99debmqkTeAIAAAVSAACgQAoAABRIAQCAAhW/CfDb3/52yHbYYYeQvfjiiyE76aSTemMk6DOnnnpqyAYOHBiyKVOmhGzcuHG9MRIs1fLLLx+yY445puHPmzFjRjZ/8803G/7MTuEJAAAUSAEAgAIpAABQIAUAAApUzCbAVVddNZsfcsghIVthhRVC9vDDD4fs2WefbX4w6COf//znQ7bvvvvWde8FF1zQw9NAY1ZfffWQnXnmmQ1/3oQJE5oZp6N5AgAABVIA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ACiQAgAABVIAAKBA/XITYM7999/frbwnzZw5M2S510WmlNIdd9wRMpsA+7fnn38+ZPPnzw/ZMsvk+/of/vCHkO25557ND/Y/5P45efLJJ7PXjhgxImS5zYbQDlZcccVsfvjhh4fsoosuCtn7778fsq997Wshe/311xuYrnd5AgAABVIAAKBACgAAFEgBAIACKQAAUKBi/hRAK+20004h22KLLbLXdnXcK/3XaaedFrLc0bsXXnhh9v5vf/vbIVtjjTWanut/yh2F/ctf/jJ7ba1WC9nEiRN7dB7432y44YYhyx21fsYZZ2TvX2211UJ21113hex73/teyF5++eV6Rmw5TwAAoEAKAAAUSAEAgAIpAABQoGI2Aa699trZ/K/+6q9C9tRTTzX8PYceemjIrrvuupANGjSo4e9IKaU5c+aE7Oc//3lTn0lrbL/99iGbPn16yK6//vq6PzO3aa+nDR8+vO5r33333V6chP5q9913D9nZZ58dstzG02233TZkyy+/fMhuvvnm7HdfddVVIXvhhRey13YqTwAAoEAKAAAUSAEAgAIpAABQoH65CXCfffYJ2fe///3stYMHDw7Zq6++2vB3b7TRRiFrdsPfv//7v4dsr732CtncuXOb+h56X+494QceeGDIzjzzzJDNnDmzV2aCdpDb8Jc7bTK3kS+3CTBnwYIFIfvBD36QvbZTTvNrhicAAFAgBQAACqQAAECBFAAAKFC1tM0TVVXVt7OizTzxxBMhy50K1UrPP/98Np86dWrIcq+bfPrpp3t8pp5Wq9WqVs/Qbmv417/+dcj22GOPuu49+eSTs/m1117b1Ez12HPPPUN23333Za999tlnQ7bVVlv1+Ex9oR3WcErtt477ytFHHx2y5557LmS5DdD77bdfyHbccceQ5TbhppTSyJEjQzZ58uTste2uq3XsCQAAFEgBAIACKQAAUCAFAAAK1C9PAuzq1b/t5Pzzz8/mv/jFL/p4EvrSDTfcELLcxqL1118/ZC+++GKvzFSPAw44IGRdbSB+4IEHenscuuGnP/1pNj/ttNNClnvNeCv95Cc/afjeK664ImS5V7N39arqG2+8MWSbb755yObNm9fAdO3BEwAAKJACAAAFUgAAoEAKAAAUqF9uApwxY0bI1lxzzRZM0rUjjzwym9sE2L9NnDix1SM05DOf+Uzd1+Ze4UrrHH744dl83XXXDVnuVepvvfVWj8/UKu+9917ITjjhhOy1jz/+eMiOPfbYkHX1qvlO4AkAABRIAQCAAikAAFAgBQAACtQvNwEedNBBIdtyyy17/Htyp7WNGzcuZAMHDgzZBhts0OPzQG/JvTK1q5MA33777V6ehu7oasPx+PHjQzZmzJiQXXnllSFb2mvkO83ChQuz+aJFi0LWnc2wncATAAAokAIAAAVSAACgQAoAABRIAQCAAvXLPwXw+uuv15X1hr333jtkO++8c598N/SEtdZaq67rqqrq5UnoCXfffXc2nzRpUshyx9p+8MEHIbvmmmuaH6wDDR8+vNUj9ChPAACgQAoAABRIAQCAAikAAFCgfrkJsK986lOfCtmKK67Ygkmg5+y22251XTdjxoxsPnPmzJ4chyYtWLAgmx9xxBEhmzJlSshyGwN33333kB133HEhmzt3bj0jttTmm2+ezTfbbLOQXXHFFb09Tp/yBAAACqQAAECBFAAAKJACAAAF6vhNgAMHDgzZAQccELKf/exn2ftzp1zl7LDDDiE799xzQ7b99tuHbPHixSG744476vpeaFdz5szpVk57mTdvXsi22267kN15550hy514Om3atJBdeeWVIfve976XnWfhwoXZvCetssoqIbvhhhuy1+Y2dD/11FM9PVJLeQIAAAVSAACgQAoAABRIAQCAAlW1Wq3rX6yqrn+xTZx44okhu/rqq0PW1SbAd955p67v2X///UM2ZMiQuu599NFHQ7bLLrvUdW8nq9VqLX9fbCes4XZz5JFHhuzmm28O2XPPPZe9/2//9m97eqSWaYc1nFJr1/FOO+0UshtvvDFkw4YNq+vz3nrrrWyeO3Hwnnvuqeszc3In+Y0dOzZkG220Ufb+3MmGt99+e8PztFJX69gTAAAokAIAAAVSAACgQAoAABSo408CHDBgQF3XHXbYYb08ycemTp0asqOOOqpPvht6S1XFPUS5jP4nt4l56623DtlWW20VsuOPPz5kudNSU0pp3LhxdWW5dbe0zez/0zPPPBOynXfeOXtt7tXI/Y0nAABQIAUAAAqkAABAgRQAAChQx28CzG1G6Q0fffRRyK699tqQXXrppSF7/fXXe2Um6Cu5TVb1bryi/8m9Svihhx6qK1t99dWzn7nSSiuF7Ktf/WrIBg8eXM+I6dZbbw3ZK6+8ErK3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Xd+Tkzv5tasTCDfaaKOQ3X777SHLndq5cOHCkO20004hq/eftWbZBAgALKEAAECBFAAAKJACAAAFUgAAoED+FECbGTNmTMhuuummkL366qsh++IXvxiymTNn9shcjWiHHdTW8NLljpTef//967r3sssuy+ZnnnlmUzO1k3ZYwylZx+0id2zwrFmz6rr3qKOOCtn48eObHaku/hQAALCEAgAABVIAAKBACgAAFGi5Vg9QqgEDBmTzM844o677X3vttZC1csMf7SV35Onxxx8fsno3/E2ZMiVk559/fvcHgw4xePDgkF111VUNf967777bzDi9whMAACiQAgAABVIAAKBACgAAFMgmwD6w+eabhyz3zvSurs2ZPXt2UzPRv51zzjkhq3fT3rx580J23nnnhayZ97LT/+Q2Nq+88sohmzNnTl+Mk7X11luH7LTTTsteu8suu4RsjTXWqOt7rr766pBNmDChrnv7kicAAFAgBQAACqQAAECBFAAAKJDXAfew4447LmS5DSG5k9q68vDDD4ds9OjRIXvjjTfq/sy+0A6vUi1hDe+www4h++Uvfxmy3MlmudPJ9t1335BNnjy5seE6XDus4ZQ6Yx3/9Kc/DdmGG24Ysn322Sd7/9y5c0NWVfFvf24D9SabbBKyr33tayFbe+21Q7biiitm58lZvHhxyO69996QnXDCCSFr5c9nrwMGAJZQAACgQAoAABRIAQCAAnXUJsCjjjoqZCeddFLIcq/UffTRR7OfmdsA8vd///chy702dYMNNghZ7iS/3Hd8+OGH2XnGjx8fsrFjx4Yst2Gm3bTDBqq+WsN77713yL70pS+F7NZbbw3ZM888E7IhQ4aELLf+U8qf8Ddw4MDstZ/0pz/9KWS5jVulaoc1nFL7/SzOef7550OW+3nY1b9zHnvssZDlfnbmTvOr1wsvvBCy+fPnZ6+dNGlSyHKba5977rmG5+krNgECAEsoAABQIAUAAAqkAABAgdp2E+Baa60VstxGvmHDhoUst6mjq1OYll122ZCtu+669YxYt1NPPTVk99xzT/baP//5zz363a3UDhuoemMNb7vttiHLndb4qU99KmT/8R//EbKnn346ZFtssUXIhg4dWu+IWTNnzgzZyJEjQ/aHP/yhqe/pT9phDafUGZsAP/e5z4Xs9NNPD9kRRxyRvX/QoEEhe/HFF0OWexX61KlTQ/ajH/0oZK+88krIFixYkJ2nP7EJEABYQgEAgAIpAABQIAUAAArUtpsAcy666KKQ/cM//EOffPeMGTNCdsstt4TsxhtvDNmrr74aso8++qhnBmtj7bCBqjfW8Fe+8pWQ3X333T39NU3JvZr1rLPOClluUyL/Tzus4ZTa72cxncUmQABgCQUAAAqkAABAgRQAACiQAgAABeqoPwVAZ2mHHdTWMM1ohzWcknVMc/wpAABgCQUAAAqkAABAgRQAACiQAgAABVIAAKBACgAAFEgBAIACKQAAUCAFAAAKpAAAQIEUAAAokAIAAAVSAACgQEt9HTAA0D95AgAABVIAAKBACgAAFEgBAIACKQAAUCAFAAAK9H8Bo5Rdcgs8qGoAAAAASUVORK5CYII=%0A">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> cnn_learner를 이용하여 lrnr 오브젝트 생성</p>
+<ul>
+<li>arch = resnet34</li>
+<li>metrics = error_rate</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span> <span class="o">=</span> <span class="n">vision_learner</span><span class="p">(</span><span class="n">dls</span><span class="p">,</span> <span class="n">arch</span> <span class="o">=</span> <span class="n">resnet34</span><span class="p">,</span> <span class="n">metrics</span> <span class="o">=</span> <span class="n">error_rate</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span><span class="o">.</span><span class="n">fine_tune</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>epoch</th>
+      <th>train_loss</th>
+      <th>valid_loss</th>
+      <th>error_rate</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0.290875</td>
+      <td>0.139522</td>
+      <td>0.046614</td>
+      <td>00:23</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>epoch</th>
+      <th>train_loss</th>
+      <th>valid_loss</th>
+      <th>error_rate</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0.053940</td>
+      <td>0.020497</td>
+      <td>0.006869</td>
+      <td>00:13</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">dls</span><span class="o">.</span><span class="n">one_batch</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+<span class="c1"># 64개의 이미지, 3채널, (28, 28)크기</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>torch.Size([64, 3, 28, 28])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">show_image</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;AxesSubplot:&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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%0A">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>TensorBase([[-4.9088,  5.3898]], device='cuda:0', grad_fn=&lt;AliasBackward0&gt;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mf">4.9088</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">5.3898</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'3일 확률 : '</span><span class="p">,</span> <span class="n">a</span> <span class="o">/</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'7일 확률 : '</span><span class="p">,</span> <span class="n">b</span> <span class="o">/</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3일 확률 :  3.3679080176154866e-05
+7일 확률 :  0.9999663209198238
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">"cpu"</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>('3', TensorBase(0), TensorBase([0.9966, 0.0034]))</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2.-추천시스템">
+<a class="anchor" href="#2.-%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. 추천시스템<a class="anchor-link" href="#2.-%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://raw.githubusercontent.com/guebin/DL2022/master/_notebooks/2022-09-08-rcmd_anal.csv'</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user</th>
+      <th>item</th>
+      <th>rating</th>
+      <th>item_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>15</td>
+      <td>1.084308</td>
+      <td>홍차5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1</td>
+      <td>4.149209</td>
+      <td>커피1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>11</td>
+      <td>1.142659</td>
+      <td>홍차1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>5</td>
+      <td>4.033415</td>
+      <td>커피5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>4</td>
+      <td>4.078139</td>
+      <td>커피4</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>995</th>
+      <td>100</td>
+      <td>18</td>
+      <td>4.104276</td>
+      <td>홍차8</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>100</td>
+      <td>17</td>
+      <td>4.164773</td>
+      <td>홍차7</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>100</td>
+      <td>14</td>
+      <td>4.026915</td>
+      <td>홍차4</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>100</td>
+      <td>4</td>
+      <td>0.838720</td>
+      <td>커피4</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>100</td>
+      <td>7</td>
+      <td>1.094826</td>
+      <td>커피7</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 4 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="(1)-73번-유저가-먹은-아이템-및-평점을-출력하는-코드를-작성.">
+<a class="anchor" href="#(1)-73%EB%B2%88-%EC%9C%A0%EC%A0%80%EA%B0%80-%EB%A8%B9%EC%9D%80-%EC%95%84%EC%9D%B4%ED%85%9C-%EB%B0%8F-%ED%8F%89%EC%A0%90%EC%9D%84-%EC%B6%9C%EB%A0%A5%ED%95%98%EB%8A%94-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9E%91%EC%84%B1." aria-hidden="true"><span class="octicon octicon-link"></span></a>(1) 73번 유저가 먹은 아이템 및 평점을 출력하는 코드를 작성.<a class="anchor-link" href="#(1)-73%EB%B2%88-%EC%9C%A0%EC%A0%80%EA%B0%80-%EB%A8%B9%EC%9D%80-%EC%95%84%EC%9D%B4%ED%85%9C-%EB%B0%8F-%ED%8F%89%EC%A0%90%EC%9D%84-%EC%B6%9C%EB%A0%A5%ED%95%98%EB%8A%94-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9E%91%EC%84%B1."> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">'user == 73'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user</th>
+      <th>item</th>
+      <th>rating</th>
+      <th>item_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>720</th>
+      <td>73</td>
+      <td>20</td>
+      <td>3.733853</td>
+      <td>홍차10</td>
+    </tr>
+    <tr>
+      <th>721</th>
+      <td>73</td>
+      <td>18</td>
+      <td>3.975004</td>
+      <td>홍차8</td>
+    </tr>
+    <tr>
+      <th>722</th>
+      <td>73</td>
+      <td>9</td>
+      <td>1.119541</td>
+      <td>커피9</td>
+    </tr>
+    <tr>
+      <th>723</th>
+      <td>73</td>
+      <td>13</td>
+      <td>3.840801</td>
+      <td>홍차3</td>
+    </tr>
+    <tr>
+      <th>724</th>
+      <td>73</td>
+      <td>2</td>
+      <td>0.943742</td>
+      <td>커피2</td>
+    </tr>
+    <tr>
+      <th>725</th>
+      <td>73</td>
+      <td>4</td>
+      <td>1.152405</td>
+      <td>커피4</td>
+    </tr>
+    <tr>
+      <th>726</th>
+      <td>73</td>
+      <td>1</td>
+      <td>0.887292</td>
+      <td>커피1</td>
+    </tr>
+    <tr>
+      <th>727</th>
+      <td>73</td>
+      <td>7</td>
+      <td>0.947641</td>
+      <td>커피7</td>
+    </tr>
+    <tr>
+      <th>728</th>
+      <td>73</td>
+      <td>6</td>
+      <td>0.868370</td>
+      <td>커피6</td>
+    </tr>
+    <tr>
+      <th>729</th>
+      <td>73</td>
+      <td>17</td>
+      <td>3.873590</td>
+      <td>홍차7</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="(2)-dls와-lrnr-오브젝트를-생성하고-lrnr-오브젝트를-학습.">
+<a class="anchor" href="#(2)-dls%EC%99%80-lrnr-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-lrnr-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%ED%95%99%EC%8A%B5." aria-hidden="true"><span class="octicon octicon-link"></span></a>(2) dls와 lrnr 오브젝트를 생성하고 lrnr 오브젝트를 학습.<a class="anchor-link" href="#(2)-dls%EC%99%80-lrnr-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-lrnr-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%ED%95%99%EC%8A%B5."> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dls</span> <span class="o">=</span> <span class="n">CollabDataLoaders</span><span class="o">.</span><span class="n">from_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">lrnr</span> <span class="o">=</span> <span class="n">collab_learner</span><span class="p">(</span><span class="n">dls</span><span class="p">,</span> <span class="n">y_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>epoch</th>
+      <th>train_loss</th>
+      <th>valid_loss</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>2.308994</td>
+      <td>2.355548</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2.306565</td>
+      <td>2.353840</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2.299696</td>
+      <td>2.340409</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2.280939</td>
+      <td>2.298518</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2.246671</td>
+      <td>2.214348</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2.189545</td>
+      <td>2.079250</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2.106238</td>
+      <td>1.893685</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1.993163</td>
+      <td>1.668546</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1.851504</td>
+      <td>1.418325</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1.686607</td>
+      <td>1.162084</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1.503044</td>
+      <td>0.919690</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1.314056</td>
+      <td>0.702645</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1.128208</td>
+      <td>0.522699</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>0.952406</td>
+      <td>0.380159</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>0.792922</td>
+      <td>0.274280</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>0.653734</td>
+      <td>0.198446</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>0.534922</td>
+      <td>0.146163</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>0.435490</td>
+      <td>0.111528</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>0.353936</td>
+      <td>0.088991</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>0.287826</td>
+      <td>0.074637</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>0.234859</td>
+      <td>0.064953</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>0.192636</td>
+      <td>0.058722</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>0.159204</td>
+      <td>0.054913</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>0.132806</td>
+      <td>0.051880</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>0.111807</td>
+      <td>0.050033</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>0.095299</td>
+      <td>0.048970</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>0.082377</td>
+      <td>0.047987</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>0.071978</td>
+      <td>0.047371</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>0.063799</td>
+      <td>0.047291</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>0.057256</td>
+      <td>0.047057</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>0.052145</td>
+      <td>0.046960</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>0.048205</td>
+      <td>0.047008</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>0.044957</td>
+      <td>0.046687</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>0.042382</td>
+      <td>0.046597</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>0.040269</td>
+      <td>0.046746</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>0.038481</td>
+      <td>0.046838</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>0.037097</td>
+      <td>0.047285</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0.036044</td>
+      <td>0.047355</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>0.035167</td>
+      <td>0.047152</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>0.034341</td>
+      <td>0.047297</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>0.033596</td>
+      <td>0.047628</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>0.032875</td>
+      <td>0.047863</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>0.032257</td>
+      <td>0.047251</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>0.031906</td>
+      <td>0.047225</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>0.031499</td>
+      <td>0.047751</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>0.030912</td>
+      <td>0.047885</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>0.030393</td>
+      <td>0.048134</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>0.030251</td>
+      <td>0.048073</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>0.029833</td>
+      <td>0.047878</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>0.029378</td>
+      <td>0.047627</td>
+      <td>00:00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="(3)-데이터프레임-생성">
+<a class="anchor" href="#(3)-%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%94%84%EB%A0%88%EC%9E%84-%EC%83%9D%EC%84%B1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3) 데이터프레임 생성<a class="anchor-link" href="#(3)-%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%94%84%EB%A0%88%EC%9E%84-%EC%83%9D%EC%84%B1"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_new</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'user'</span><span class="p">:[</span><span class="mi">73</span><span class="p">]</span> <span class="o">*</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">'item'</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">)})</span>
+<span class="n">df_new</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user</th>
+      <th>item</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>73</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>73</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>73</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>73</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>73</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>73</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>73</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>73</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>73</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>73</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>73</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>73</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>73</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>73</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>73</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>73</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>73</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>73</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>73</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>73</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="(4)-73번-유저의-취향-파악">
+<a class="anchor" href="#(4)-73%EB%B2%88-%EC%9C%A0%EC%A0%80%EC%9D%98-%EC%B7%A8%ED%96%A5-%ED%8C%8C%EC%95%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>(4) 73번 유저의 취향 파악<a class="anchor-link" href="#(4)-73%EB%B2%88-%EC%9C%A0%EC%A0%80%EC%9D%98-%EC%B7%A8%ED%96%A5-%ED%8C%8C%EC%95%85"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">_dl</span> <span class="o">=</span> <span class="n">dls</span><span class="o">.</span><span class="n">test_dl</span><span class="p">(</span><span class="n">df_new</span><span class="p">)</span>
+<span class="n">lrnr</span><span class="o">.</span><span class="n">get_preds</span><span class="p">(</span><span class="n">dl</span> <span class="o">=</span> <span class="n">_dl</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(tensor([0.9909, 1.0178, 1.0145, 1.0174, 0.9919, 0.9393, 1.0213, 1.0092, 1.0326,
+         0.9973, 3.8045, 3.8595, 3.8676, 3.8691, 3.8351, 3.8488, 3.8202, 3.8834,
+         3.7705, 3.8070]),
+ None)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.-시퀀스자료분석">
+<a class="anchor" href="#3.-%EC%8B%9C%ED%80%80%EC%8A%A4%EC%9E%90%EB%A3%8C%EB%B6%84%EC%84%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 시퀀스자료분석<a class="anchor-link" href="#3.-%EC%8B%9C%ED%80%80%EC%8A%A4%EC%9E%90%EB%A3%8C%EB%B6%84%EC%84%9D"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://raw.githubusercontent.com/guebin/DL2022/master/_notebooks/2022-09-19-human_numbers_100.csv'</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1995</th>
+      <td>1995</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>1996</th>
+      <td>1996</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>1997</th>
+      <td>1997</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>1998</th>
+      <td>1998</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+    <tr>
+      <th>1999</th>
+      <td>1999</td>
+      <td>one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, twenty nine, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, forty, forty one, forty two, forty three, forty four, forty five, forty six, forty seven, forty eight, forty nine, fifty, fifty one, fifty two, fifty three, fifty four, fifty five, fifty six, fifty seve...</td>
+    </tr>
+  </tbody>
+</table>
+<p>2000 rows × 2 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="(1)-TextDataLoaders.from_df을-이용하여-dls-오브젝트-생성">
+<a class="anchor" href="#(1)-TextDataLoaders.from_df%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-dls-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(1) TextDataLoaders.from_df을 이용하여 dls 오브젝트 생성<a class="anchor-link" href="#(1)-TextDataLoaders.from_df%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-dls-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dls</span> <span class="o">=</span> <span class="n">TextDataLoaders</span><span class="o">.</span><span class="n">from_df</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">is_lm</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">seq_len</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">text_col</span> <span class="o">=</span> <span class="s1">'text'</span><span class="p">)</span>
+<span class="n">dls</span><span class="o">.</span><span class="n">show_batch</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Due to IPython and Windows limitation, python multiprocessing isn't available now.
+So `n_workers` has to be changed to 0 to avoid getting stuck
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>text</th>
+      <th>text_</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>xxbos one , two ,</td>
+      <td>one , two , three</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>hundred xxbos one , two</td>
+      <td>xxbos one , two ,</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>one hundred xxbos one ,</td>
+      <td>hundred xxbos one , two</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>, one hundred xxbos one</td>
+      <td>one hundred xxbos one ,</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>nine , one hundred xxbos</td>
+      <td>, one hundred xxbos one</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ninety nine , one hundred</td>
+      <td>nine , one hundred xxbos</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>, ninety nine , one</td>
+      <td>ninety nine , one hundred</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>eight , ninety nine ,</td>
+      <td>, ninety nine , one</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>ninety eight , ninety nine</td>
+      <td>eight , ninety nine ,</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="(2)-lrnr-오브젝트-생성-(arch-=-AWD_LSTM,-metrics-=-accuracy)">
+<a class="anchor" href="#(2)-lrnr-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1-(arch-=-AWD_LSTM,-metrics-=-accuracy)" aria-hidden="true"><span class="octicon octicon-link"></span></a>(2) lrnr 오브젝트 생성 (arch = AWD_LSTM, metrics = accuracy)<a class="anchor-link" href="#(2)-lrnr-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1-(arch-=-AWD_LSTM,-metrics-=-accuracy)"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span> <span class="o">=</span> <span class="n">language_model_learner</span><span class="p">(</span><span class="n">dls</span><span class="p">,</span> <span class="n">arch</span> <span class="o">=</span> <span class="n">AWD_LSTM</span><span class="p">,</span> <span class="n">metrics</span> <span class="o">=</span> <span class="n">accuracy</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="(3)-lrnr-오브젝트에서-fine_tune(3)-메소드를-이용하여-모형을-학습">
+<a class="anchor" href="#(3)-lrnr-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-fine_tune(3)-%EB%A9%94%EC%86%8C%EB%93%9C%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EB%AA%A8%ED%98%95%EC%9D%84-%ED%95%99%EC%8A%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3) lrnr 오브젝트에서 fine_tune(3) 메소드를 이용하여 모형을 학습<a class="anchor-link" href="#(3)-lrnr-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-fine_tune(3)-%EB%A9%94%EC%86%8C%EB%93%9C%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EB%AA%A8%ED%98%95%EC%9D%84-%ED%95%99%EC%8A%B5"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span><span class="o">.</span><span class="n">fine_tune</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>epoch</th>
+      <th>train_loss</th>
+      <th>valid_loss</th>
+      <th>accuracy</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0.541494</td>
+      <td>0.157192</td>
+      <td>0.977558</td>
+      <td>00:52</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>epoch</th>
+      <th>train_loss</th>
+      <th>valid_loss</th>
+      <th>accuracy</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0.026514</td>
+      <td>0.004046</td>
+      <td>0.999242</td>
+      <td>00:55</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0.002075</td>
+      <td>0.002533</td>
+      <td>0.999315</td>
+      <td>00:55</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.001414</td>
+      <td>0.002281</td>
+      <td>0.999324</td>
+      <td>00:55</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="s1">'one, two,'</span><span class="p">,</span> <span class="n">n_words</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'one , two , three , four , five , six , seven , eight , nine , ten , eleven , twelve , thirteen , fourteen , fifteen , sixteen , seventeen , eighteen , nineteen , twenty , twenty one , twenty two , twenty three , twenty four , twenty five'</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lrnr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="s1">'twenty, twenty one,'</span><span class="p">,</span> <span class="n">n_words</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+    /* Turns off some styling */
+    progress {
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+    }
+    progress:not([value]), progress:not([value])::-webkit-progress-bar {
+        background: repeating-linear-gradient(45deg, #7e7e7e, #7e7e7e 10px, #5c5c5c 10px, #5c5c5c 20px);
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'twenty , twenty one , thirty two , thirty three , thirty four , thirty five , thirty six , thirty seven , thirty eight , thirty nine , forty , forty one , forty two , forty three , forty four , forty five , forty six , forty seven , forty eight ,'</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> IAB 딥러닝 수업 자료를 기반으로 공부한 내용입니다.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Semibro/socket"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/socket/2022/09/19/IABDL.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/socket/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/socket/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/socket/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Welcome! Visiting my blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/Semibro" target="_blank" title="Semibro"><svg class="svg-icon grey"><use xlink:href="/socket/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
